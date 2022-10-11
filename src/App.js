@@ -5,6 +5,7 @@ import Banner from './components/banner/Banner';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Articles/Blog';
+import SIngleTopic from './components/singleTopic/SIngleTopic';
 
 function App() {
 
@@ -15,8 +16,14 @@ function App() {
       children: [
         {
           path: '/',
-          loader:''
+          loader:async () =>{
+              return fetch( 'https://openapi.programming-hero.com/api/quiz')
+          },
           element: [<Banner></Banner>, <Quiz></Quiz>]
+        },
+        {
+          path:'/topic/:id',
+          element:<SIngleTopic></SIngleTopic>
         },
         {
           path:'/statistics',

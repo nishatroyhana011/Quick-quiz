@@ -6,11 +6,11 @@ const Header = () => {
     <div>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <NavLink className="btn btn-ghost normal-case text-xl">daisyUI</NavLink>
+          <NavLink className="btn btn-ghost normal-case text-xl" to='/'>Quick Quiz</NavLink>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal p-0">
-            <li><NavLink to='/topics'> Subjects </NavLink></li>
+            <li><NavLink to='/'> Home </NavLink></li>
             <li><NavLink to='/statistics'> Statistics </NavLink></li>
             <li><NavLink to='/blog'> Blog </NavLink></li>
           </ul>
