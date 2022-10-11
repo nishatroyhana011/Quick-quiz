@@ -4,13 +4,13 @@ import Topic from '../Topic/Topic';
 
 const Quiz = () => {
 
-    const data = useLoaderData();
-    const allTopics  = data.data;
+    const {data} = useLoaderData();
+
     return (
         <div>
             <p className='text-4xl text-red-500'>Quiz</p>
             {
-                allTopics.map(topic=><Topic topic={topic} key={topic.id}></Topic>)
+                data.map(topic=><Topic topic={topic} key={topic.id}></Topic>)
             }
         </div>
     );
