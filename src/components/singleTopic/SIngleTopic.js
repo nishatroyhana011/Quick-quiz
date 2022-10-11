@@ -6,12 +6,12 @@ const SIngleTopic = () => {
 
    const {data} = useLoaderData();
    const {name, total, questions} = data;
-    console.log(questions)
+   
     return (
         <div>
             <p className='text-xl text-secondary font-bold'>Topic Name: {name}</p>
             <p>Number of questions: {total}</p>
-            <div className='grid grid-cols-2'>
+            <div className='grid md:grid-cols-2 mt-5'>
             {
                 questions.map(question=><Questions key={question.id} questions={question}></Questions>)
             }

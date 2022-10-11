@@ -9,7 +9,7 @@ const Topic = ({topic}) => {
         navigate(`/topic/${id}`);
     }
     return (
-        <div><div className="card w-96 bg-base-100 shadow-xl">
+        <div><div className="card bg-base-100 shadow-xl">
         <figure><img src={logo} alt="Shoes" /></figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{name}</h2>

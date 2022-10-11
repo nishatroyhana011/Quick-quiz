@@ -9,9 +9,11 @@ const Quiz = () => {
     return (
         <div>
             <p className='text-4xl text-red-500'>Quiz</p>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5'>
             {
                 data.map(topic=><Topic topic={topic} key={topic.id}></Topic>)
             }
+            </div>
         </div>
     );
 };
