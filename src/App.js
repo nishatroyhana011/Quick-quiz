@@ -42,7 +42,7 @@ function App() {
   ])
 
   return (
-    <div className="App mx-8">
+    <div className="App mx-10">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

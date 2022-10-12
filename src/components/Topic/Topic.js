@@ -15,7 +15,7 @@ const Topic = ({topic}) => {
           <h2 className="card-title">{name}</h2>
           <p>Number of quizes:{total}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary" onClick={showQuestions}>Start Now</button>
+            <button className="btn btn-success" onClick={showQuestions}>Start Now</button>
           </div>
         </div>
       </div>

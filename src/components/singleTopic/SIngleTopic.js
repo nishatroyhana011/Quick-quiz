@@ -9,7 +9,7 @@ const SIngleTopic = () => {
    
     return (
         <div>
-            <p className='text-xl text-secondary font-bold'>Topic Name: {name}</p>
+            <p className='text-2xl text-success font-bold'>Topic Name: {name}</p>
             <p>Number of questions: {total}</p>
             <div className='grid md:grid-cols-2 mt-5'>
             {
