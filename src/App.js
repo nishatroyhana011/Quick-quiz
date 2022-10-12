@@ -6,6 +6,7 @@ import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Articles/Blog';
 import SIngleTopic from './components/singleTopic/SIngleTopic';
+import NotFound from './components/Not found/NotFound';
 
 function App() {
 
@@ -30,13 +31,16 @@ function App() {
         },
         {
           path:'/statistics',
+          loader:async () =>{
+            return fetch( 'https://openapi.programming-hero.com/api/quiz')
+        },
           element: <Statistics></Statistics>
         },
         {
           path:'/blog',
           element:<Blog></Blog>
         },
-        { path: '*', element: <h3>Not Found</h3> }
+        { path: '*', element: <NotFound></NotFound> }
       ]
     }
   ])
