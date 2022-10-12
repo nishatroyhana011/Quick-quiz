@@ -13,10 +13,11 @@ Get topic details by topic id: https://openapi.programming-hero.com/api/quiz/${i
 =>Responsive design
 
 # External library:
-=> tailwind css
-=> DaisyUI
-=> FontAwesome Icon
-=> Rechart
+
+$ tailwind css
+$ DaisyUI
+$ FontAwesome Icon
+* Rechart
 
 
 
