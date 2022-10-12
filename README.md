@@ -1,6 +1,6 @@
 # Project Name: Quick quiz
-* Project Link: 
-* API links: 
+* Project Link: https://assignment-9-quick-quiz.netlify.app/
+* Github links: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-nishatroyhana011
 * Get all quiz topics: https://openapi.programming-hero.com/api/quiz
 * Get topic details by topic id: https://openapi.programming-hero.com/api/
 
