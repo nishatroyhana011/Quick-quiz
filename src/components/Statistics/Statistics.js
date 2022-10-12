@@ -6,12 +6,9 @@ const Statistics = () => {
 
     const { data } = useLoaderData()
 
-
-
-
     return (
         <div className='flex flex-col md:flex-row m-8 md:m-10 justify-between gap-4'>
-            <div>
+            <div className='w-full md:w-1/2'>
                 <p className='text-6xl font-semibold'>Daily practice makes you more <span className='text-success font-bold'>confident</span> </p>
                 <p className='text-lg my-5'>We provide daily quizes to make your preparation better. Try out  our  pro subscription.</p>
                 <button className='btn btn-success'> Go Pro</button>
@@ -27,8 +24,6 @@ const Statistics = () => {
                     </BarChart>
                 </ResponsiveContainer>
             </div>
-
-
         </div>
     );
 };

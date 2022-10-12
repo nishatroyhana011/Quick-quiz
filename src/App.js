@@ -20,7 +20,7 @@ function App() {
           loader:async () =>{
               return fetch( 'https://openapi.programming-hero.com/api/quiz')
           },
-          element: [<Banner></Banner>, <Quiz></Quiz>]
+          element: [<Banner></Banner>, <Quiz></Quiz>,]
         },
         {
           path:'/topic/:id',
